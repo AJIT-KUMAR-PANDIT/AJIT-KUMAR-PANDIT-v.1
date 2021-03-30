@@ -1,0 +1,61 @@
+body {
+    background-image: url("../images/linux_background.svg");
+    width: auto;
+    height: auto;
+    background-repeat:no-repeat;
+    
+   }
+/*===================================================[         fluid container          ]=================================*/
+   .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 2.3fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header"
+      "photo app icon"
+      "footer footer footer";
+  }
+  
+  .footer { grid-area: footer; }
+  
+  .header { grid-area: header; }
+  
+  .photo { grid-area: photo; }
+  
+  .app { grid-area: app; }
+  
+  .icon { grid-area: icon; }
+  
+  /*==================================================[          nav bar             ]======================================*/
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  

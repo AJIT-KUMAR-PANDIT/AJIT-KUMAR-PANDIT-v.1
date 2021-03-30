@@ -1,0 +1,51 @@
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);   
+
+/*--------  text 3d */
+font-size: 3vw;
+  color: #07ff18;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-shadow: 0px 0px 0 rgb(1,249,18),
+               1px 1px 0 rgb(-4,244,13),
+               2px 2px 0 rgb(-10,238,7),
+               3px 3px 0 rgb(-15,233,2),
+               4px 4px 0 rgb(-21,227,0),
+               5px 5px 0 rgb(-26,222,0),
+               6px 6px 0 rgb(-32,216,0),
+               7px 7px 0 rgb(-37,211,0),
+               8px 8px 0 rgb(-43,205,0),
+               9px 9px  0 rgb(-49,199,0),
+               10px 10px 9px rgba(0,0,0,1),
+               10px 10px 1px rgba(0,0,0,0.5),
+               0px 0px 9px rgba(0,0,0,.2);
+  }
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+/*==============================================[   text   ]===================*/
+
+.ri_txt{
+      color: ivory;
+      align-content: center;
+}
